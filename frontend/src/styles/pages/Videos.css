@@ -1,0 +1,39 @@
+.videos-container {
+  width: 100vw;                 /* Todo el ancho de la ventana */
+  height: 100vh;                /* Todo el alto de la ventana */
+  padding: 2rem;
+  background-color: #f9fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  overflow-y: auto;            /* Si el contenido es muy grande, permite scroll */
+}
+
+.videos-container h1 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 0.5rem;
+}
+
+.videos-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.videos-container li {
+  margin-bottom: 1rem;
+}
+
+.videos-container a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.videos-container a:hover {
+  color: #005999;
+}

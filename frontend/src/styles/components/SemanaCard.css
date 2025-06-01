@@ -1,0 +1,50 @@
+/* ======== CONTENEDOR DE LA TARJETA ======== */
+.semana-card {
+  background-color: #ffffff;           /* Fondo blanco para contraste */
+  border-radius: 12px;                 /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+  padding: 1.5rem;                     /* Espacio interior */
+  transition: transform 0.3s;         /* Suaviza cualquier transformación (hover, etc.) */
+  display: flex;                       /* Flexbox para distribuir contenido */
+  flex-direction: column;             /* Apila contenido verticalmente */
+  justify-content: space-between;     /* Espacio entre los elementos internos */
+}
+
+/* ======== TÍTULO DE LA SEMANA ======== */
+.semana-title {
+  font-size: 1.25rem;                  /* Tamaño grande para resaltar */
+  font-weight: bold;                  /* Negrita */
+  margin-bottom: 0.5rem;              /* Espacio debajo del título */
+  color: #333;                         /* Gris oscuro para buen contraste */
+}
+
+/* ======== DESCRIPCIÓN DE LA SEMANA ======== */
+.semana-description {
+  font-size: 1rem;                     /* Tamaño estándar de texto */
+  margin-bottom: 1rem;                /* Espacio debajo del párrafo */
+  color: #555;                         /* Gris medio para lectura cómoda */
+}
+
+/* ======== BOTONES GENERALES ======== */
+.semana-btn {
+  padding: 0.5rem 1rem;               /* Espaciado interno del botón */
+  margin-right: 0.5rem;              /* Espacio entre botones */
+  border-radius: 8px;                /* Bordes redondeados */
+  border: none;                      /* Sin borde por defecto */
+  cursor: pointer;                   /* Cursor tipo mano al pasar */
+  font-weight: bold;                 /* Texto del botón en negrita */
+  text-decoration: none;            /* Quita subrayado si es <a> */
+  display: inline-block;             /* Permite que tenga tamaño propio */
+}
+
+/* ======== BOTÓN DE VIDEO ======== */
+.video-btn {
+  background-color: #007bff;         /* Azul vibrante */
+  color: #fff;                        /* Texto blanco */
+}
+
+/* ======== BOTÓN DE QUIZ ======== */
+.quiz-btn {
+  background-color: #28a745;         /* Verde fuerte */
+  color: #fff;                        /* Texto blanco */
+}
