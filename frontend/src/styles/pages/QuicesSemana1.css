@@ -1,0 +1,184 @@
+/* === CONTENEDOR GENERAL DEL QUIZ === */
+.quices-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* === TÍTULO PRINCIPAL === */
+.quices-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+/* === INTRO DEL QUIZ === */
+.quiz-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.quiz-intro ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-image-preview {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.empezar-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #007acc;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.empezar-btn:hover {
+  background-color: #005999;
+}
+
+/* === CONTENEDOR DE LA PREGUNTA === */
+.quiz-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  text-align: left;
+}
+
+.quiz-container h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+/* === PREGUNTA === */
+.quiz-question h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* === OPCIONES === */
+.quiz-options {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quiz-options li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.quiz-options input[type="radio"] {
+  margin-right: 0.7rem;
+}
+
+.quiz-options label {
+  background-color: #f1f5f9;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  flex: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quiz-options label:hover {
+  background-color: #dceeff;
+}
+
+/* === BOTÓN SIGUIENTE CENTRADO === */
+.quiz-boton-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.siguiente-btn {
+  background-color: #007acc;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.siguiente-btn:hover {
+  background-color: #005999;
+}
+/* === CAJA SOLO PARA LA PREGUNTA Y OPCIONES === */
+.quiz-card-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Pregunta */
+.quiz-card-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+/* Opciones */
+.quiz-card-box .quiz-options {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quiz-card-box .quiz-options li {
+  margin-bottom: 1rem;
+}
+
+.quiz-card-box .quiz-options label {
+  display: block;
+  background-color: #f1f5f9;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quiz-card-box .quiz-options label:hover {
+  background-color: #dceeff;
+}
+
+.quiz-card-box input[type="radio"] {
+  margin-right: 0.7rem;
+}
