@@ -1,0 +1,83 @@
+/* === CONTENEDOR PRINCIPAL DE LA VISTA DE QUIZZES === */
+.quices-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* === TÍTULO PRINCIPAL === */
+.quices-container h1 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* === TEXTO INTRODUCTORIO === */
+.intro-text {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* === GRID DE TARJETAS DE QUIZZES === */
+.quices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* === TARJETA INDIVIDUAL DEL QUIZ === */
+.quiz-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quiz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* === TÍTULO DE CADA QUIZ === */
+.quiz-card h2 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* === DESCRIPCIÓN DEL QUIZ === */
+.quiz-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+  flex-grow: 1;
+}
+
+/* === BOTÓN PARA VER EL QUIZ === */
+.btn-ver {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover {
+  background-color: #005999;
+}

@@ -1,0 +1,119 @@
+/* Contenedor principal que ocupa toda la pantalla */
+.contacto-container {
+  padding: 6rem 2rem 3rem;         /* Espacio arriba, a los lados y abajo */
+  background-color: #fefefe;       /* Fondo claro para contraste */
+  color: #333;                     /* Texto en gris oscuro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
+  line-height: 1.6;                /* Espaciado entre líneas para mejor lectura */
+  width: 100vw;                    /* Ocupa todo el ancho de la ventana */
+  min-height: 100vh;              /* Mínimo una pantalla completa de alto */
+  display: flex;                   /* Flexbox para centrar el contenido */
+  justify-content: center;        /* Centra horizontalmente */
+  align-items: center;            /* Centra verticalmente */
+  box-sizing: border-box;         /* Incluye padding/border en el tamaño total */
+}
+
+/* Tarjeta de contacto */
+.contacto-card {
+  background-color: #f9f9f9;       /* Fondo ligeramente gris */
+  padding: 2rem;                   /* Espacio interno amplio */
+  border-radius: 12px;            /* Bordes redondeados */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  display: flex;                   /* Flexbox para imagen e info en fila */
+  flex-direction: row;            /* Elementos en fila */
+  gap: 2rem;                       /* Espacio entre imagen e info */
+  max-width: 1000px;              /* Máximo ancho */
+  width: 100%;                    /* Ocupa todo el ancho disponible */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Efecto visual al pasar el mouse por la tarjeta */
+.contacto-card:hover {
+  transform: scale(1.01);         /* Agranda ligeramente la tarjeta */
+}
+
+/* Imagen del profesor */
+.contacto-foto {
+  width: 450px;                   /* Ancho fijo */
+  height: auto;                   /* Mantiene proporción */
+  border-radius: 10px;           /* Bordes redondeados */
+  object-fit: cover;             /* Cubre el contenedor sin deformarse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Contenedor de la información textual */
+.contacto-info {
+  flex: 1;                        /* Ocupa el espacio restante */
+}
+
+/* Título del profesor */
+.contacto-info h2 {
+  margin-top: 0;                 /* Quita margen superior */
+  color: #003366;                /* Azul institucional */
+  font-size: 1.8rem;             /* Tamaño grande del título */
+  border-bottom: 2px solid #00bcd4; /* Línea decorativa inferior */
+  padding-bottom: 0.5rem;        /* Espacio bajo el texto antes de la línea */
+  margin-bottom: 1rem;           /* Separación con el siguiente elemento */
+}
+
+/* Párrafos informativos */
+.contacto-info p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Listas dentro de la sección de contacto */
+.contacto-info ul {
+  padding-left: 1.5rem;          /* Sangría para el contenido de la lista */
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Elementos individuales de la lista */
+.contacto-info li {
+  margin-bottom: 0.3rem;
+  list-style: square;            /* Estilo de viñeta cuadrado */
+  color: #333;
+}
+
+/* Enlaces dentro de la información */
+.contacto-info a {
+  color: #007acc;                /* Azul claro para enlaces */
+  text-decoration: none;
+  font-weight: 500;              /* Negrita moderada */
+}
+
+/* Estilo cuando el mouse pasa por encima del enlace */
+.contacto-info a:hover {
+  color: #005f99;                /* Azul más oscuro */
+  text-decoration: underline;    /* Subraya al pasar el mouse */
+}
+@media (max-width: 768px) {
+  .contacto-card {
+    flex-direction: column;  /* Cambia a columna en móvil */
+    padding: 1.5rem 1rem;    /* Reduce padding para pantalla pequeña */
+    max-width: 90vw;         /* Que no se salga del ancho de pantalla */
+  }
+
+  .contacto-foto {
+    width: 100%;      /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Para que no quede gigante */
+    height: auto;     /* Mantiene proporción */
+    margin: 0 auto 1rem auto; /* Centra la imagen y separa de texto */
+    display: block;
+  }
+
+  .contacto-info h2 {
+    font-size: 1.4rem; /* Tamaño más pequeño para celular */
+    text-align: center;
+  }
+
+  .contacto-info {
+    text-align: center; /* Centra todo el texto en móvil */
+  }
+
+  .contacto-info ul {
+    padding-left: 0; /* Quita la sangría para listas */
+    list-style-position: inside; /* Viñetas adentro para que no se salga */
+  }
+}

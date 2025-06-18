@@ -1,0 +1,146 @@
+/* === NAVBAR GENERAL === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* === LOGO A LA IZQUIERDA === */
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* === BOTÓN HAMBURGUESA (OCULTO EN DESKTOP) === */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+/* === CONTENEDOR DE LINKS A LA DERECHA === */
+.navbar-links-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* === LINKS EN FILA A LA DERECHA === */
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* === ESTILO DE ENLACES === */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #0059b3;
+}
+
+/* === DROPDOWNS === */
+.dropdown-trigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background-color: white;
+  color: #003366;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 0.3rem 0;
+  z-index: 999;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.4rem 1rem;
+  color: #003366;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background-color: #e6f3ff;
+}
+
+/* === RESPONSIVE: ENLACES ABAJO EN MÓVIL === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links-container {
+    display: none; /* Oculto por defecto */
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  /* Cuando esté activo (clase activo) mostrar menú */
+  .navbar-links-container.activo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    width: 100%;
+  }
+
+  /* Ajuste dropdown menú en móvil */
+  .dropdown-menu {
+    position: static;
+    background-color: #f0f8ff;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 0;
+  }
+
+  .dropdown-item {
+    color: #003366;
+  }
+
+  .dropdown-item:hover {
+    background-color: #d0e4ff;
+  }
+}
